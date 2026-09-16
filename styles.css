@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+}
+
+header {
+    background-color: #243b53;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.formulario,
+.registros {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario {
+    margin-bottom: 30px;
+}
+
+.formulario h2,
+.registros h2 {
+    color: #243b53;
+    margin-bottom: 20px;
+}
+
+.grupo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.grupo label {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.grupo input {
+    padding: 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.grupo input:focus {
+    outline: none;
+    border-color: #243b53;
+}
+
+.grupo small {
+    color: #d62828;
+    min-height: 18px;
+    margin-top: 4px;
+}
+
+.notas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.botones {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.botones button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #243b53;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.botones button:hover {
+    background-color: #1b2d40;
+}
+
+.botones .btn-limpiar {
+    background-color: #64748b;
+}
+
+.botones .btn-limpiar:hover {
+    background-color: #475569;
+}
+
+.titulo-registros {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cantidadEstudiantes {
+    background-color: #e2e8f0;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.mensaje-vacio {
+    text-align: center;
+    padding: 30px;
+    color: #64748b;
+}
+
+.tabla-contenedor {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background-color: #243b53;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f8fafc;
+}
+
+.aprobado {
+    color: #15803d;
+    font-weight: bold;
+}
+
+.desaprobado {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+.btn-eliminar {
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    padding: 7px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-eliminar:hover {
+    background-color: #b91c1c;
+}
+
+footer {
+    margin-top: 40px;
+    background-color: #243b53;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 800px) {
+    .notas {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .titulo-registros {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    main {
+        width: 95%;
+    }
+}
